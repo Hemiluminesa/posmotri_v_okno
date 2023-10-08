@@ -8,7 +8,7 @@ html {
   block-size: 100%;
 }
 
-.page {
+/* .page {
   inline-size: 1200px;
   block-size: 100%;
   margin: auto;
@@ -16,7 +16,7 @@ html {
   font-family: 'Fira Sans Condensed', sans-serif;
   font-size: 18px;
   background-color: #1b1919;
-}
+} */
 
 h1,
 h2,
@@ -67,9 +67,8 @@ ol {
 
 .content {
   display: flex;
-  justify-content: center;
-  align-items: flex-end;
   gap: 30px;
+  margin: 0 30px;
   inline-size: 100%;
 }
 
@@ -99,8 +98,6 @@ ol {
 
 .search-form {
   display: flex;
-  width: 711px;
-  height: 54px;
   align-items: center;
   gap: 40px;
 }
@@ -125,8 +122,6 @@ ol {
 .search-form__label {
   display: flex;
   align-items: center;
-  width: 225px;
-  height: 27px;
   gap: 5px;
   cursor: pointer;
   white-space: nowrap;
@@ -149,12 +144,11 @@ ol {
   border-bottom: 1px solid #fff;
   padding: 2px 0;
   inline-size: 225px;
-  color: rgba(255, 255, 255, 0.70);
   background-color: transparent;
-  font-family: Fira Sans Condensed;
-  font-size: 18px;
-  font-style: normal;
-  font-weight: 400;
+  color: currentColor;
+  font-family: inherit;
+  font-weight: inherit;
+  font-size: inherit;
   line-height: normal;
   min-height: 27px;
   min-width: 225px;
@@ -274,7 +268,7 @@ ol {
   block-size: 298px;
   position: relative;
   overflow-x: hidden;
-  overflow-y: scroll;
+  overflow-y: auto;
   scrollbar-width: none;
 }
 
@@ -328,7 +322,6 @@ ol {
   align-items: start;
   gap: 6px;
   width: 200px;
-  height: 101px;
 }
 
 .content__video-card-title {
